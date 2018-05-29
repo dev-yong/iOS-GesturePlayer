@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D52AD052A642D05670440825 /* Pods_GPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D31C3D2D8C3013D5B71156 /* Pods_GPlayer.framework */; };
+		FC413C0520AD5BCF0072844B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC413C0420AD5BCF0072844B /* AppDelegate.swift */; };
+		FC413C0720AD5BCF0072844B /* GPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC413C0620AD5BCF0072844B /* GPlayerViewController.swift */; };
+		FC413C0A20AD5BCF0072844B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC413C0820AD5BCF0072844B /* Main.storyboard */; };
+		FC413C0C20AD5BCF0072844B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC413C0B20AD5BCF0072844B /* Assets.xcassets */; };
+		FC413C0F20AD5BCF0072844B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC413C0D20AD5BCF0072844B /* LaunchScreen.storyboard */; };
+		FC413C1C20AD61DD0072844B /* GPlayerLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC413C1B20AD61DD0072844B /* GPlayerLayer.swift */; };
+		FC413C1E20AD61E40072844B /* GPlayerLayerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC413C1D20AD61E40072844B /* GPlayerLayerManager.swift */; };
+		FC413C2020AD62010072844B /* GPlayerControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC413C1F20AD62010072844B /* GPlayerControlView.swift */; };
+		FC413C2220AD641B0072844B /* AVPlayer+isPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC413C2120AD641B0072844B /* AVPlayer+isPlaying.swift */; };
+		FC413C2420AD643A0072844B /* Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC413C2320AD643A0072844B /* Default.swift */; };
+		FC413C2620AD64590072844B /* Enum+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC413C2520AD64590072844B /* Enum+Hashable.swift */; };
+		FC413C2B20AD64AA0072844B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC413C2A20AD64AA0072844B /* Enums.swift */; };
+		FC82FC3F20AD7A9F00CFE780 /* GButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC82FC3E20AD7A9F00CFE780 /* GButton.swift */; };
+		FC82FC4120AD902A00CFE780 /* GSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC82FC4020AD902A00CFE780 /* GSlider.swift */; };
+		FC82FC4320ADB4AD00CFE780 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC82FC4220ADB4AD00CFE780 /* Util.swift */; };
+		FC82FC4520ADDBD800CFE780 /* GPlayerControlViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC82FC4420ADDBD800CFE780 /* GPlayerControlViewManager.swift */; };
+		FC82FC4920AE5DFC00CFE780 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC82FC4820AE5DFC00CFE780 /* MainViewController.swift */; };
+		FC82FC4C20AE5ED700CFE780 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC82FC4B20AE5ED700CFE780 /* APIService.swift */; };
+		FC82FC4E20AE5F1D00CFE780 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC82FC4D20AE5F1D00CFE780 /* RequestService.swift */; };
+		FC82FC5020AE697600CFE780 /* NSObject+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC82FC4F20AE697600CFE780 /* NSObject+ReuseIdentifier.swift */; };
+		FC82FC5220AE963500CFE780 /* GPlayerSlideUpMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC82FC5120AE963500CFE780 /* GPlayerSlideUpMenu.swift */; };
+		FCD6977C20BD4F0D00B6CCA1 /* water.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FCD6977A20BD4F0D00B6CCA1 /* water.mp4 */; };
+		FCD6977D20BD4F0D00B6CCA1 /* rain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FCD6977B20BD4F0D00B6CCA1 /* rain.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		38D31C3D2D8C3013D5B71156 /* Pods_GPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D3055A762206CF811167C20 /* Pods-GPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPlayer/Pods-GPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		BABB843FE6BD6B326923D469 /* Pods-GPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPlayer/Pods-GPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		FC413C0120AD5BCF0072844B /* GPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC413C0420AD5BCF0072844B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC413C0620AD5BCF0072844B /* GPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPlayerViewController.swift; sourceTree = "<group>"; };
+		FC413C0920AD5BCF0072844B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FC413C0B20AD5BCF0072844B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC413C0E20AD5BCF0072844B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC413C1020AD5BCF0072844B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC413C1B20AD61DD0072844B /* GPlayerLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPlayerLayer.swift; sourceTree = "<group>"; };
+		FC413C1D20AD61E40072844B /* GPlayerLayerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPlayerLayerManager.swift; sourceTree = "<group>"; };
+		FC413C1F20AD62010072844B /* GPlayerControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPlayerControlView.swift; sourceTree = "<group>"; };
+		FC413C2120AD641B0072844B /* AVPlayer+isPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AVPlayer+isPlaying.swift"; sourceTree = "<group>"; };
+		FC413C2320AD643A0072844B /* Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Default.swift; sourceTree = "<group>"; };
+		FC413C2520AD64590072844B /* Enum+Hashable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Enum+Hashable.swift"; sourceTree = "<group>"; };
+		FC413C2A20AD64AA0072844B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		FC82FC3E20AD7A9F00CFE780 /* GButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GButton.swift; sourceTree = "<group>"; };
+		FC82FC4020AD902A00CFE780 /* GSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSlider.swift; sourceTree = "<group>"; };
+		FC82FC4220ADB4AD00CFE780 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		FC82FC4420ADDBD800CFE780 /* GPlayerControlViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPlayerControlViewManager.swift; sourceTree = "<group>"; };
+		FC82FC4820AE5DFC00CFE780 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FC82FC4B20AE5ED700CFE780 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		FC82FC4D20AE5F1D00CFE780 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
+		FC82FC4F20AE697600CFE780 /* NSObject+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ReuseIdentifier.swift"; sourceTree = "<group>"; };
+		FC82FC5120AE963500CFE780 /* GPlayerSlideUpMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPlayerSlideUpMenu.swift; sourceTree = "<group>"; };
+		FCD6977A20BD4F0D00B6CCA1 /* water.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = water.mp4; path = Resource/water.mp4; sourceTree = "<group>"; };
+		FCD6977B20BD4F0D00B6CCA1 /* rain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = rain.mp4; path = Resource/rain.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC413BFE20AD5BCF0072844B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D52AD052A642D05670440825 /* Pods_GPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CC6AA47877A7625E6328A2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D3055A762206CF811167C20 /* Pods-GPlayer.debug.xcconfig */,
+				BABB843FE6BD6B326923D469 /* Pods-GPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F03F3180A58FA745F91EDD00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38D31C3D2D8C3013D5B71156 /* Pods_GPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC413BF820AD5BCF0072844B = {
+			isa = PBXGroup;
+			children = (
+				FCD6977B20BD4F0D00B6CCA1 /* rain.mp4 */,
+				FCD6977A20BD4F0D00B6CCA1 /* water.mp4 */,
+				FC413C0320AD5BCF0072844B /* GPlayer */,
+				FC413C0220AD5BCF0072844B /* Products */,
+				8CC6AA47877A7625E6328A2C /* Pods */,
+				F03F3180A58FA745F91EDD00 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FC413C0220AD5BCF0072844B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC413C0120AD5BCF0072844B /* GPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC413C0320AD5BCF0072844B /* GPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				FC413C0420AD5BCF0072844B /* AppDelegate.swift */,
+				FC413C1020AD5BCF0072844B /* Info.plist */,
+				FC413C0B20AD5BCF0072844B /* Assets.xcassets */,
+				FC82FC4A20AE5EC000CFE780 /* Network */,
+				FC413C2920AD647C0072844B /* Model */,
+				FC413C1A20AD5CC20072844B /* CustomView */,
+				FC413C1920AD5CB60072844B /* Extension */,
+				FC413C1820AD5C9B0072844B /* Player */,
+				FC413C1720AD5BFC0072844B /* ViewController */,
+				FC413C1620AD5BE90072844B /* Storyboard */,
+			);
+			path = GPlayer;
+			sourceTree = "<group>";
+		};
+		FC413C1620AD5BE90072844B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FC413C0D20AD5BCF0072844B /* LaunchScreen.storyboard */,
+				FC413C0820AD5BCF0072844B /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		FC413C1720AD5BFC0072844B /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FC413C0620AD5BCF0072844B /* GPlayerViewController.swift */,
+				FC82FC4820AE5DFC00CFE780 /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FC413C1820AD5C9B0072844B /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				FC413C1B20AD61DD0072844B /* GPlayerLayer.swift */,
+				FC413C1D20AD61E40072844B /* GPlayerLayerManager.swift */,
+				FC413C1F20AD62010072844B /* GPlayerControlView.swift */,
+				FC82FC4420ADDBD800CFE780 /* GPlayerControlViewManager.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		FC413C1920AD5CB60072844B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FC413C2120AD641B0072844B /* AVPlayer+isPlaying.swift */,
+				FC413C2520AD64590072844B /* Enum+Hashable.swift */,
+				FC82FC4F20AE697600CFE780 /* NSObject+ReuseIdentifier.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FC413C1A20AD5CC20072844B /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				FC82FC3E20AD7A9F00CFE780 /* GButton.swift */,
+				FC82FC4020AD902A00CFE780 /* GSlider.swift */,
+				FC82FC5120AE963500CFE780 /* GPlayerSlideUpMenu.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		FC413C2920AD647C0072844B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC413C2320AD643A0072844B /* Default.swift */,
+				FC413C2A20AD64AA0072844B /* Enums.swift */,
+				FC82FC4220ADB4AD00CFE780 /* Util.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC82FC4A20AE5EC000CFE780 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FC82FC4B20AE5ED700CFE780 /* APIService.swift */,
+				FC82FC4D20AE5F1D00CFE780 /* RequestService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC413C0020AD5BCF0072844B /* GPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC413C1320AD5BCF0072844B /* Build configuration list for PBXNativeTarget "GPlayer" */;
+			buildPhases = (
+				C95C361C55F79F62187CA3E0 /* [CP] Check Pods Manifest.lock */,
+				FC413BFD20AD5BCF0072844B /* Sources */,
+				FC413BFE20AD5BCF0072844B /* Frameworks */,
+				FC413BFF20AD5BCF0072844B /* Resources */,
+				CBB776465A909453A5026D68 /* [CP] Embed Pods Frameworks */,
+				2596D98AD2308333948F01B6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPlayer;
+			productName = GPlayer;
+			productReference = FC413C0120AD5BCF0072844B /* GPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC413BF920AD5BCF0072844B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "이광용";
+				TargetAttributes = {
+					FC413C0020AD5BCF0072844B = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = FC413BFC20AD5BCF0072844B /* Build configuration list for PBXProject "GPlayer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC413BF820AD5BCF0072844B;
+			productRefGroup = FC413C0220AD5BCF0072844B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FC413C0020AD5BCF0072844B /* GPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC413BFF20AD5BCF0072844B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC413C0F20AD5BCF0072844B /* LaunchScreen.storyboard in Resources */,
+				FC413C0C20AD5BCF0072844B /* Assets.xcassets in Resources */,
+				FC413C0A20AD5BCF0072844B /* Main.storyboard in Resources */,
+				FCD6977D20BD4F0D00B6CCA1 /* rain.mp4 in Resources */,
+				FCD6977C20BD4F0D00B6CCA1 /* water.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2596D98AD2308333948F01B6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GPlayer/Pods-GPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C95C361C55F79F62187CA3E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBB776465A909453A5026D68 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GPlayer/Pods-GPlayer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GPlayer/Pods-GPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC413BFD20AD5BCF0072844B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC413C1E20AD61E40072844B /* GPlayerLayerManager.swift in Sources */,
+				FC82FC4C20AE5ED700CFE780 /* APIService.swift in Sources */,
+				FC413C2020AD62010072844B /* GPlayerControlView.swift in Sources */,
+				FC413C2420AD643A0072844B /* Default.swift in Sources */,
+				FC82FC3F20AD7A9F00CFE780 /* GButton.swift in Sources */,
+				FC413C2220AD641B0072844B /* AVPlayer+isPlaying.swift in Sources */,
+				FC413C0720AD5BCF0072844B /* GPlayerViewController.swift in Sources */,
+				FC413C0520AD5BCF0072844B /* AppDelegate.swift in Sources */,
+				FC82FC4920AE5DFC00CFE780 /* MainViewController.swift in Sources */,
+				FC82FC4E20AE5F1D00CFE780 /* RequestService.swift in Sources */,
+				FC82FC5220AE963500CFE780 /* GPlayerSlideUpMenu.swift in Sources */,
+				FC82FC5020AE697600CFE780 /* NSObject+ReuseIdentifier.swift in Sources */,
+				FC82FC4320ADB4AD00CFE780 /* Util.swift in Sources */,
+				FC82FC4520ADDBD800CFE780 /* GPlayerControlViewManager.swift in Sources */,
+				FC413C2620AD64590072844B /* Enum+Hashable.swift in Sources */,
+				FC82FC4120AD902A00CFE780 /* GSlider.swift in Sources */,
+				FC413C2B20AD64AA0072844B /* Enums.swift in Sources */,
+				FC413C1C20AD61DD0072844B /* GPlayerLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FC413C0820AD5BCF0072844B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC413C0920AD5BCF0072844B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FC413C0D20AD5BCF0072844B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC413C0E20AD5BCF0072844B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC413C1120AD5BCF0072844B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FC413C1220AD5BCF0072844B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC413C1420AD5BCF0072844B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D3055A762206CF811167C20 /* Pods-GPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EPWV8KDDJE;
+				INFOPLIST_FILE = GPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LeeGwangYong.GPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC413C1520AD5BCF0072844B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BABB843FE6BD6B326923D469 /* Pods-GPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EPWV8KDDJE;
+				INFOPLIST_FILE = GPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.LeeGwangYong.GPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC413BFC20AD5BCF0072844B /* Build configuration list for PBXProject "GPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC413C1120AD5BCF0072844B /* Debug */,
+				FC413C1220AD5BCF0072844B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC413C1320AD5BCF0072844B /* Build configuration list for PBXNativeTarget "GPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC413C1420AD5BCF0072844B /* Debug */,
+				FC413C1520AD5BCF0072844B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FC413BF920AD5BCF0072844B /* Project object */;
+}

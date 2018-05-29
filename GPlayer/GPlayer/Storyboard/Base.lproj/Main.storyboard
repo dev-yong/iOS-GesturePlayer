@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aTf-CV-L0t">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="0Ei-UC-kpj">
+            <objects>
+                <tableViewController storyboardIdentifier="MainViewController" id="aTf-CV-L0t" customClass="MainViewController" customModule="GPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="SFT-ES-jhF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="245" id="2cP-Vi-28O" customClass="TableViewCell" customModule="GPlayer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="245"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2cP-Vi-28O" id="xIF-ue-MLo">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="244.66666666666666"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PlaceHolder" translatesAutoresizingMaskIntoConstraints="NO" id="aX8-QK-qIh">
+                                            <rect key="frame" x="16" y="11" width="343" height="193"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="aX8-QK-qIh" secondAttribute="height" multiplier="16:9" id="Um3-w0-dgB"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FtR-pD-yuG">
+                                            <rect key="frame" x="16" y="209" width="343" height="30.666666666666657"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="aX8-QK-qIh" secondAttribute="trailing" id="AX4-Z1-g6o"/>
+                                        <constraint firstItem="FtR-pD-yuG" firstAttribute="top" secondItem="aX8-QK-qIh" secondAttribute="bottom" constant="5" id="Eb7-J4-yCm"/>
+                                        <constraint firstItem="aX8-QK-qIh" firstAttribute="top" secondItem="xIF-ue-MLo" secondAttribute="topMargin" id="UEM-C6-oF1"/>
+                                        <constraint firstItem="aX8-QK-qIh" firstAttribute="leading" secondItem="xIF-ue-MLo" secondAttribute="leadingMargin" id="bfg-A6-7UC"/>
+                                        <constraint firstItem="FtR-pD-yuG" firstAttribute="centerX" secondItem="aX8-QK-qIh" secondAttribute="centerX" id="dSP-qq-TU5"/>
+                                        <constraint firstAttribute="bottom" secondItem="FtR-pD-yuG" secondAttribute="bottom" constant="5" id="r2h-jm-kqc"/>
+                                        <constraint firstItem="FtR-pD-yuG" firstAttribute="width" secondItem="aX8-QK-qIh" secondAttribute="width" id="yIL-iJ-i9w"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="thumbnail" destination="aX8-QK-qIh" id="cKJ-Vm-BZo"/>
+                                    <outlet property="title" destination="FtR-pD-yuG" id="43r-7a-zAa"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aTf-CV-L0t" id="dLL-mA-QJD"/>
+                            <outlet property="delegate" destination="aTf-CV-L0t" id="0cI-F6-SYs"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qM3-Y1-lVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-700" y="14.77832512315271"/>
+        </scene>
+        <!--Player View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="GPlayerViewController" id="BYZ-38-t0r" customClass="GPlayerViewController" customModule="GPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIB-Qc-KYg" customClass="GPlayerLayer" customModule="GPlayer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I8L-Lj-BDb" customClass="GPlayerControlView" customModule="GPlayer" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bIB-Qc-KYg" secondAttribute="trailing" id="1RX-8C-SEx"/>
+                            <constraint firstAttribute="bottom" secondItem="I8L-Lj-BDb" secondAttribute="bottom" id="Ced-cn-1SW"/>
+                            <constraint firstItem="I8L-Lj-BDb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="H9x-Pv-sQA"/>
+                            <constraint firstItem="I8L-Lj-BDb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="IMJ-ya-Mre"/>
+                            <constraint firstItem="bIB-Qc-KYg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QVe-f8-CEm"/>
+                            <constraint firstAttribute="bottom" secondItem="bIB-Qc-KYg" secondAttribute="bottom" id="fuo-ax-9nE"/>
+                            <constraint firstItem="bIB-Qc-KYg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="kg3-J6-GWj"/>
+                            <constraint firstItem="I8L-Lj-BDb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oHU-oh-NG5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="playerControlView" destination="I8L-Lj-BDb" id="EPN-DU-Z98"/>
+                        <outlet property="playerLayer" destination="bIB-Qc-KYg" id="UAf-JH-Fce"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PlaceHolder" width="1100" height="619"/>
+    </resources>
+</document>
