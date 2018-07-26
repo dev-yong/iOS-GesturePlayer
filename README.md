@@ -42,10 +42,6 @@ iOS(min 10.0)
 
 ------
 
-### Application Diagram
-
-![image-20180520230001223](https://ws1.sinaimg.cn/large/006tKfTcgy1fri5i59cenj31ce0pyadc.jpg)
-
 ### 참고 자료
 
 - #### observer
