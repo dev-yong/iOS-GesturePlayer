@@ -20,13 +20,10 @@
 
 ## Preview
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2bisYhHHs7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![preview](http://img.youtube.com/vi/2bisYhHHs7M/0.jpg)](http://www.youtube.com/watch?v=2bisYhHHs7M)
 
 ## Reference
 
 - https://developer.apple.com/videos/play/wwdc2017/212/?time=1215
 - https://developer.apple.com/documentation/avfoundation/avplayerlayer
 - https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/EventOverview/Introduction/Introduction.html
-
-
-
