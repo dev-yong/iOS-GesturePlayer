@@ -7,30 +7,6 @@
 //
 
 import UIKit
-import Alamofire
-
-enum VideoType {
-    case local, remote
-}
-
-struct Videos {
-    let type: VideoType
-    let str: String
-    let image: UIImage? = nil
-}
-
-class TableViewCell: UITableViewCell {
-    @IBOutlet weak var thumbnail: UIImageView!
-    @IBOutlet weak var title: UILabel!
-    var info: Videos? {
-        didSet {
-            if let image = info?.image {
-                thumbnail.image = image
-            }
-            title.text = info?.str
-        }
-    }
-}
 
 class MainViewController: UITableViewController {
     var videos: [Videos] = [Videos(type: .local, str: "rain"), Videos(type: .local, str: "water")]
@@ -54,21 +30,6 @@ class MainViewController: UITableViewController {
         self.videos.append(Videos(type: .remote, str: "http://devstreaming.apple.com/videos/wwdc/2016/503lkp4vimgv7tqecn7/503/hls_vod_mvp.m3u8"))
         self.videos.append(Videos(type: .remote, str: "http://www.html5videoplayer.net/videos/toystory.mp4"))
         self.videos.append(Videos(type: .remote, str: "https://devstreaming-cdn.apple.com/videos/wwdc/2017/514tjrrgnguh4k/514/hls_vod_mvp.m3u8"))
-//        RequestService.getData(url: "", parameter: nil) { (response) in
-//            switch response {
-//            case .Success(let result):
-//                if let list = result as? [String] {
-//                    for item in list {
-//                        self.videos.append()
-//                    }
-//                }
-//                self.tableView.reloadData()
-//            case .Failure(_):
-//                break
-//            case .FailDescription(_):
-//                break
-//            }
-//        }
     }
     // MARK: - Table view delegate
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -29,6 +29,8 @@
 		FC82FC4E20AE5F1D00CFE780 /* RequestService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC82FC4D20AE5F1D00CFE780 /* RequestService.swift */; };
 		FC82FC5020AE697600CFE780 /* NSObject+ReuseIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC82FC4F20AE697600CFE780 /* NSObject+ReuseIdentifier.swift */; };
 		FC82FC5220AE963500CFE780 /* GPlayerSlideUpMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC82FC5120AE963500CFE780 /* GPlayerSlideUpMenu.swift */; };
+		FCBDDCA321FCD57200687909 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBDDCA221FCD57200687909 /* Video.swift */; };
+		FCBDDCA521FCD5AA00687909 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBDDCA421FCD5AA00687909 /* TableViewCell.swift */; };
 		FCD6977C20BD4F0D00B6CCA1 /* water.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FCD6977A20BD4F0D00B6CCA1 /* water.mp4 */; };
 		FCD6977D20BD4F0D00B6CCA1 /* rain.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = FCD6977B20BD4F0D00B6CCA1 /* rain.mp4 */; };
 /* End PBXBuildFile section */
@@ -60,6 +62,8 @@
 		FC82FC4D20AE5F1D00CFE780 /* RequestService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestService.swift; sourceTree = "<group>"; };
 		FC82FC4F20AE697600CFE780 /* NSObject+ReuseIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+ReuseIdentifier.swift"; sourceTree = "<group>"; };
 		FC82FC5120AE963500CFE780 /* GPlayerSlideUpMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPlayerSlideUpMenu.swift; sourceTree = "<group>"; };
+		FCBDDCA221FCD57200687909 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		FCBDDCA421FCD5AA00687909 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		FCD6977A20BD4F0D00B6CCA1 /* water.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = water.mp4; path = Resource/water.mp4; sourceTree = "<group>"; };
 		FCD6977B20BD4F0D00B6CCA1 /* rain.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = rain.mp4; path = Resource/rain.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,6 +179,7 @@
 				FC82FC3E20AD7A9F00CFE780 /* GButton.swift */,
 				FC82FC4020AD902A00CFE780 /* GSlider.swift */,
 				FC82FC5120AE963500CFE780 /* GPlayerSlideUpMenu.swift */,
+				FCBDDCA421FCD5AA00687909 /* TableViewCell.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 				FC413C2320AD643A0072844B /* Default.swift */,
 				FC413C2A20AD64AA0072844B /* Enums.swift */,
 				FC82FC4220ADB4AD00CFE780 /* Util.swift */,
+				FCBDDCA221FCD57200687909 /* Video.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -333,6 +339,7 @@
 				FC413C2020AD62010072844B /* GPlayerControlView.swift in Sources */,
 				FC413C2420AD643A0072844B /* Default.swift in Sources */,
 				FC82FC3F20AD7A9F00CFE780 /* GButton.swift in Sources */,
+				FCBDDCA521FCD5AA00687909 /* TableViewCell.swift in Sources */,
 				FC413C2220AD641B0072844B /* AVPlayer+isPlaying.swift in Sources */,
 				FC413C0720AD5BCF0072844B /* GPlayerViewController.swift in Sources */,
 				FC413C0520AD5BCF0072844B /* AppDelegate.swift in Sources */,
@@ -343,6 +350,7 @@
 				FC82FC4320ADB4AD00CFE780 /* Util.swift in Sources */,
 				FC82FC4520ADDBD800CFE780 /* GPlayerControlViewManager.swift in Sources */,
 				FC413C2620AD64590072844B /* Enum+Hashable.swift in Sources */,
+				FCBDDCA321FCD57200687909 /* Video.swift in Sources */,
 				FC82FC4120AD902A00CFE780 /* GSlider.swift in Sources */,
 				FC413C2B20AD64AA0072844B /* Enums.swift in Sources */,
 				FC413C1C20AD61DD0072844B /* GPlayerLayer.swift in Sources */,
